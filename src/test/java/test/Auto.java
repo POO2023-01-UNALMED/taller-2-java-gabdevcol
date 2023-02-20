@@ -11,7 +11,11 @@ public class Auto {
 	
 	int cantidadAsientos() {
 		int cantidad = 0;
-		cantidad = this.asientos.length;
+		for (int i=0; i<asientos.length;i++) {
+			if (asientos[i]!= null) {
+				cantidad ++;
+			}
+		}
 		return cantidad;
 	}
 	
