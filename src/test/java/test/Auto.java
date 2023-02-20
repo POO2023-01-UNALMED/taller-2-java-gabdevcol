@@ -9,13 +9,13 @@ public class Auto {
 	int registro;
 	static int cantidadCreados;
 	
-	int CantidadAsientos() {
+	int cantidadAsientos() {
 		int cantidad = 0;
 		cantidad = this.asientos.length;
 		return cantidad;
 	}
 	
-	String VerificarIntegridad() {
+	String verificarIntegridad() {
 		String respuesta = "Auto original";
 		
 		if (this.registro == motor.registro ) {
