@@ -22,10 +22,10 @@ public class Auto {
 	String verificarIntegridad() {
 		String respuesta = "Auto original";
 		
-		if (this.registro == motor.registro ) {
+		if (this.registro == motor.registro) {
 			for (int i=0; i < asientos.length; i++) {
 				
-				if (asientos[i].registro != this.registro) {
+				if (asientos[i].registro != this.registro && asientos[i] != null) {
 					respuesta = "Las piezas no son originales";	
 					break;
 				}
